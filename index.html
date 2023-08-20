@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPI QR Code and Payment Link</title>
+    <!-- Add your CSS styles here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #qrCodeImage {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>UPI QR Code and Payment Link Example</h1>
+    
+    <!-- UPI QR Code -->
+    <div id="qrCodeImage">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=mr.rabadi@sbi&pn=Donation&am=Amount&tn" alt="UPI QR Code">
+    </div>
+    
+    <!-- UPI Payment Link -->
+    <a href="upi://pay?pa=yourupiaddress@example.com&pn=Recipient%20Name&mc=YourMerchantCode&tid=TransactionID&tr=Amount&tn=Transaction%20Note">Make UPI Payment</a>
+
+</body>
+</html>
